@@ -1,13 +1,14 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Slide, SlideTitle } from '../../components/SlideLayout';
+import { images } from '../../assets/images';
 
 const examples = [
   {
     id: 1,
     title: 'AI reproduced a real person',
-    aiImage: '/images/diffusion-generated-image.png',
-    realImage: '/images/diffusion-training-image.png',
+    aiImage: images.diffusionGenerated,
+    realImage: images.diffusionTraining,
     aiLabel: 'AI Generated',
     realLabel: 'Training Data',
     caption: 'Stable Diffusion output vs. the exact training photo it memorized',
@@ -15,17 +16,17 @@ const examples = [
   {
     id: 2,
     title: 'Watermark baked into the model',
-    aiImage: '/images/getyyyy.png',
-    realImage: null,
+    aiImage: images.getyyyy,
+    realImage: null as string | null,
     aiLabel: '"Gettyyyyyyyyy"',
-    realLabel: null,
+    realLabel: null as string | null,
     caption: 'The model learned Getty\'s watermark because it trained on their photos',
   },
   {
     id: 3,
     title: 'More watermark leaks',
-    aiImage: '/images/soccer-getty-image.png',
-    realImage: '/images/image.png',
+    aiImage: images.soccerGetty,
+    realImage: images.crowdGetty,
     aiLabel: 'AI Output',
     realLabel: 'AI Output',
     caption: 'Getty watermarks appear in completely unrelated AI generations',

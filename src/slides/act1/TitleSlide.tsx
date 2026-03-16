@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Slide } from '../../components/SlideLayout';
+import { images } from '../../assets/images';
 
 export function TitleSlide() {
   return (
@@ -99,7 +100,7 @@ export function TitleSlide() {
         }}
       >
         <img
-          src="/images/iitm-logo.png"
+          src={images.iitmLogo}
           alt="IIT Madras"
           style={{ height: 50, objectFit: 'contain' }}
         />

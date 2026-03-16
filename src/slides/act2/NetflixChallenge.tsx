@@ -1,14 +1,15 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect, useCallback } from 'react';
 import { Slide, SlideTitle } from '../../components/SlideLayout';
+import { images } from '../../assets/images';
 
 const netflixData = [
-  { movie: 'Enthiran', rating: 4, date: '2005-11-12', poster: '/images/enthiran.jpeg', review: '"Watched near Sathyam theatre, T. Nagar with college friends"' },
-  { movie: 'The Dark Knight', rating: 5, date: '2005-12-03', poster: '/images/dark-night.jpeg', review: '"Best villain ever. Rewatched at my hostel in MCC campus"' },
-  { movie: 'Vada Chennai', rating: 5, date: '2006-01-15', poster: '/images/vada-chennai.jpeg', review: '"North Madras representation! I live near Royapuram"' },
-  { movie: 'Inception', rating: 4, date: '2006-02-20', poster: '/images/inception.jpeg', review: '"My data science prof would love the math in this"' },
-  { movie: 'Ghilli', rating: 5, date: '2006-03-08', poster: '/images/ghilli.jpeg', review: '"Thalapathy fan since school days at Don Bosco"' },
-  { movie: 'Interstellar', rating: 4, date: '2006-04-11', poster: '/images/interstellar.jpeg', review: '"Cried at the bookshelf scene. Alone at home in 600004"' },
+  { movie: 'Enthiran', rating: 4, date: '2005-11-12', poster: images.enthiran, review: '"Watched near Sathyam theatre, T. Nagar with college friends"' },
+  { movie: 'The Dark Knight', rating: 5, date: '2005-12-03', poster: images.darkKnight, review: '"Best villain ever. Rewatched at my hostel in MCC campus"' },
+  { movie: 'Vada Chennai', rating: 5, date: '2006-01-15', poster: images.vadaChennai, review: '"North Madras representation! I live near Royapuram"' },
+  { movie: 'Inception', rating: 4, date: '2006-02-20', poster: images.inception, review: '"My data science prof would love the math in this"' },
+  { movie: 'Ghilli', rating: 5, date: '2006-03-08', poster: images.ghilli, review: '"Thalapathy fan since school days at Don Bosco"' },
+  { movie: 'Interstellar', rating: 4, date: '2006-04-11', poster: images.interstellar, review: '"Cried at the bookshelf scene. Alone at home in 600004"' },
 ];
 
 const imdbData = [
