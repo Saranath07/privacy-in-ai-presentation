@@ -139,7 +139,7 @@ export function CoinFlipIntro() {
         marginBottom: '0.3rem',
         maxWidth: 700,
       }}>
-        "With Tamil Nadu elections coming up... Did you vote for TVK?"
+        "With Tamil Nadu elections coming up... Will you vote for TVK?"
       </AnimatedText>
 
       <AnimatedText delay={0.7} style={{
